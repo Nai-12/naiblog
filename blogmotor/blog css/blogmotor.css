@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 
+
 /* Header Logo And Menu */
 header {
     display: flex;
@@ -123,21 +124,50 @@ nav ul {
     }
 }
 
-/* Sidebar Info */
+/* Sidebar */
+
 section {
     display: flex;
     justify-content: space-evenly;
-    margin: 2rem 35px;
-    flex-direction: row;
-    font-family: 'Tilt Neon', cursive;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
 }
 
-section a {
-    text-decoration: none;
+.info-blog {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#info-blog-teks>a {
+    color: black;
+}
+
+#blog-list {
+    flex-wrap: wrap;
+    flex: 0.3;
+}
+
+#blog-motor {
+    margin: 2rem 0;
+}
+
+#blog-motor h2 {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+#blog-motor p {
+    font-size: 12px;
+}
+
+.blog-teks a {
+    color: black;
 }
 
 .link a {
     color: black;
+    text-decoration: none;
 }
 
 .link ul {
@@ -150,71 +180,16 @@ section a {
     color: black;
 }
 
-.info {
-    border: 1px solid white;
-    flex: 0.7;
-}
-
-.info-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.info-list img {
-    margin: 0 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px gray;
-    margin-bottom: 20px;
-}
-
-.info-list p {
-    margin: 0 23px;
-}
-
-.info-text {
-    color: gray;
-    margin-top: 10px;
-    padding-bottom: 50px;
-}
-
-#info-list {
-    margin: 1rem;
-    padding-top: 20px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
-    transition: 0.3s ease all;
-}
-
-#info-list:hover {
-    transform: scale(1.1);
-}
-
-#info-list a {
-    margin: 0 23px;
-    border: 1px solid rgb(55, 180, 180);
-    padding: 10px;
-    color: white;
-    background-color: rgb(55, 180, 180);
-    box-shadow: 0px 0px 10px rgb(55, 180, 180);
-    border-radius: 15px;
-}
-
-@media screen and (min-width: 2000) {
-    .info {
-        flex: 0.3;
-    }
-}
-
-@media screen and (min-width: 1090) {
-    .info {
-        flex: 0.3;
-    }
-}
-
 @media screen and (max-width: 570px) {
+    .info-blog {
+        justify-content: start;
+        margin-left: 3rem;
+    }
+
+    #blog-list {
+        flex: 0.8;
+    }
+
     .link {
         display: none;
     }
