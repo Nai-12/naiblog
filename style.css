@@ -202,18 +202,6 @@ section a {
     border-radius: 15px;
 }
 
-@media screen and (min-width: 2000) {
-    .info {
-        flex: 0.3;
-    }
-}
-
-@media screen and (min-width: 1090) {
-    .info {
-        flex: 0.3;
-    }
-}
-
 @media screen and (max-width: 570px) {
     .link {
         display: none;

@@ -144,8 +144,12 @@ section {
 }
 
 #blog-list {
-    flex-wrap: wrap;
-    flex: 0.3;
+    display: block;
+    padding: 5px;
+    margin-top: 5px;
+    height: 500px;
+    width: 700px;
+    overflow: auto;
 }
 
 #blog-motor {
